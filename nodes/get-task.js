@@ -11,7 +11,7 @@ module.exports = function (RED) {
       var id = msg.payload.id;
       var options = {
         token,
-        endpoint: `tasks/${id}`,
+        endpoint: `v1/tasks/${id}`,
         method: "GET"
       };
       todoistQuery(options)

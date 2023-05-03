@@ -11,7 +11,7 @@ module.exports = function (RED) {
       var data = msg.payload;
       var options = {
         token,
-        endpoint: "tasks",
+        endpoint: "v1/tasks",
         method: "POST",
         data
       };

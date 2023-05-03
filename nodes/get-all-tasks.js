@@ -9,7 +9,7 @@ module.exports = function (RED) {
 
     node.on("input", function (msg) {
       var project_id = msg.payload.project_id || null;
-      var endpoint = project_id ? `tasks?project_id=${project_id}` : "tasks";
+      var endpoint = project_id ? `v1/tasks?project_id=${project_id}` : "v1/tasks";
       var options = {
         token,
         endpoint,

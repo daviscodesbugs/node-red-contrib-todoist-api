@@ -11,7 +11,7 @@ module.exports = function (RED) {
       var data = msg.payload;
       var options = {
         token,
-        endpoint: `tasks/${data.id}/reopen`,
+        endpoint: `v1/tasks/${data.id}/reopen`,
         method: "POST",
         data
       };
